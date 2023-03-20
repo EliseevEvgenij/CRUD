@@ -1,0 +1,55 @@
+*{
+    font-family: sans-serif;        /* буквы без засечек */
+    box-sizing: border-box;         /* c помощью ширины и высоты будем указывать элементы   */
+}
+
+th, td {
+    font-size: 18px;                /* размер шрифта  */
+    padding: 10px;                  /* внутренние отступы c верху и снизу 10px  */
+}
+
+th {
+    background: #555;             
+    color: #fff;
+}
+
+td {
+    background: #eee;             /* фоновый цвет */
+}
+
+a {
+    text-decoration: none;          /* отменяет все эффекты текста */
+    transition: 0.2s ease;          /*  эффект плавного анимированного перехода от одного состояния к другому; */
+    color: #3f75c5;
+}
+
+td:nth-tchild(6) > a {
+    color: red;
+}
+
+a:hover {
+    opacity: 0.7;                   /* непрозрачность элемента */
+}
+
+p {
+    font-style:italic;              /* стиль курсивное начертание  */
+}
+
+input, textarea, button {
+    padding: 10px;                  /* внутренние отступы c верху и снизу 10px  */
+    display: block;                 /*  элементы списка отображаются один под другим на странице */
+    min-height: 30px;               /* минимальная высота элемента  */
+    width: 250px;                   /* ширину элемента  */
+    margin-bottom: 10px;            /* внешний отступ внизу элемента  */
+}
+
+textarea {
+    resize: vertical;               /*   размер можно изменять по вертикали */
+    height: 80px;
+}
+
+button {
+   text-transform: uppercase;       /*   преобразование текста: верхний регистр */
+   font-weight: bold;               /*   устанавливает начертание шрифта жирный  */
+   cursor: pointer;                 /*   устанавливает форму курсора, когда он находится в пределах элемента  */
+}
